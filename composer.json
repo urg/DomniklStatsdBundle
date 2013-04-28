@@ -12,7 +12,7 @@
     ],
     "require": {
         "symfony/framework-bundle": "~2.0",
-        "domnikl/statsd": "dev-develop"
+        "domnikl/statsd": "1.0.0"
     },
     "autoload": {
         "psr-0": { "Domnikl\\StatsdBundle": "" }
