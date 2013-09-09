@@ -29,4 +29,20 @@ class DomniklStatsdExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }
+
+    /**
+     * @return string
+     */
+    public function getXsdValidationBasePath()
+    {
+        return __DIR__ . '/../Resources/config/schema';
+    }
+
+    /**
+     * @return string
+     */
+    public function getNamespace()
+    {
+        return 'http://domnikl.github.io/schema/dic/statsd';
+    }
 }

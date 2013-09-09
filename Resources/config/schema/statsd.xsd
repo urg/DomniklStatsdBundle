@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns="http://domnikl.github.io/schema/dic/statsd"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://domnikl.github.io/schema/dic/statsd"
+    elementFormDefault="qualified">
+
+    <xsd:element name="config">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="namespace" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+                <xsd:element name="connection" type="connection" minOccurs="0" maxOccurs="1"/>
+            </xsd:all>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name="connection">
+        <xsd:sequence>
+            <xsd:element name="class" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="host" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="port" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
