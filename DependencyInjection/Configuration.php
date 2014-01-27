@@ -36,8 +36,14 @@ class Configuration implements ConfigurationInterface
                     ->scalarNode('host')
                         ->defaultValue('localhost')
                     ->end()
-                    ->scalarNode('port')
+                    ->integerNode('port')
                         ->defaultValue(8125)
+                    ->end()
+                    ->integerNode('timeout')
+                        ->defaultValue(null)
+                    ->end()
+                    ->booleanNode('persistent')
+                        ->defaultValue(false)
                     ->end();
 
         return $treeBuilder;

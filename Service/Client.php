@@ -20,8 +20,10 @@ final class Client
     {
         $host = $connectionOptions['host'];
         $port = $connectionOptions['port'];
+        $timeout = $connectionOptions['timeout'];
+        $persistent = $connectionOptions['persistent'];
 
-        $connection = new $adapterClass($host, $port);
+        $connection = new $adapterClass($host, $port, $timeout, $persistent);
         $this->client = new \Domnikl\Statsd\Client($connection, $namespace);
     }
 
