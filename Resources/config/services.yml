@@ -5,9 +5,9 @@ services:
     domnikl_statsd:
         class: %domnikl_statsd.service.class%
         arguments:
-          	- %domnikl_statsd.connection.class%
-          	- %domnikl_statsd.namespace% 
-          	- %domnikl_statsd.connection.options%
+            - %domnikl_statsd.connection.class%
+            - %domnikl_statsd.namespace%
+            - %domnikl_statsd.connection.options%
 
     statsd:
         alias: domnikl_statsd
