@@ -1,6 +1,6 @@
 {
     "name": "domnikl/statsd-bundle",
-    "description": "adds support for statsd in your Symfony2 application",
+    "description": "adds support for statsd to your Symfony2 application",
     "keywords": ["statsd", "monitoring"],
     "type": "symfony-bundle",
     "license": "MIT",
@@ -12,7 +12,7 @@
     ],
     "require": {
         "symfony/framework-bundle": "~2.2",
-        "domnikl/statsd": "1.0.2"
+        "domnikl/statsd": "1.1.0"
     },
     "autoload": {
         "psr-0": { "Domnikl\\StatsdBundle": "" }
