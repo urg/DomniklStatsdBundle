@@ -2,7 +2,7 @@
 
 namespace Domnikl\StatsdBundle\Service;
 
-final class Client
+class Client
 {
     /**
      * @var \Domnikl\Statsd\Client
