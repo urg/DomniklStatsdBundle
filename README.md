@@ -16,6 +16,16 @@ The best way to install the domnikl/statsd-bundle is to use Composer and add the
 
 ## Configuration
 
+Register the bundle in your `app/AppKernel.php` by adding `new Domnikl\StatsdBundle\DomniklStatsdBundle()`. It should look like:
+
+```
+        $bundles = array(
+            ...
+            new Domnikl\StatsdBundle\DomniklStatsdBundle(),
+            ...
+        );
+```
+
 Add the following lines to your `app/config/config.yml`:
 
 ```
